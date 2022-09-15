@@ -1,13 +1,9 @@
-for (i=1;i<=20;i++){
-    let count = 0;
-    for(let j=1;j<=20;j++){
-      if (i%j==0){
-        count++;
-      }
-    }
-    if(count==2){
-      console.log(i,"Prime Number");
-    }else {
-      console.log(i,"Not Prime");
-    }
-  }
+let num = 7, count = 0;
+for (i = 2; i <= num / 2; i++)
+  if (num % i == 0)
+    count++;
+
+if (count == 0)
+  console.log("Prime")
+else
+  console.log("Not Prime")
