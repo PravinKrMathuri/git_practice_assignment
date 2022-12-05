@@ -1,17 +1,23 @@
 #include <stdio.h>
 
-int Sum(int a,int b){
-    return a+b;
-}
-
-int Divide(int a,int b){
-    return a/b;
-}
-
-int main() 
+int Sum(int a, int b)
 {
-    int a=10,b=5;
-    printf("Sum of %d and %d = %d",a,b,Sum(a,b));
-    printf("\nDivide of %d and %d = %d",a,b,Divide(a,b));
+    return a + b;
+}
+int product(int a, int b)
+{
+    return a * b;
+}
+int Divide(int a, int b)
+{
+    return a / b;
+}
+
+int main()
+{
+    int a = 5, b = 10;
+    printf("Sum of %d and %d = %d", a, b, Sum(a, b));
+    printf("\n Product of %d and %d = %d", a, b, product(a, b));
+    printf("\nDivide of %d and %d = %d", a, b, Divide(a, b));
     return 0;
 }
